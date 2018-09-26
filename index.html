@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nick Keith: Web Developer</title>
+    <meta property="og:site_name" content="Nicholas Keith Portfolio" />
+    <meta property="og:title" content="Nicholas Keith Portfolio" />
+    <meta property="og:description" content="Portfolio for Nick Keith"
+    />
+    <meta property="og:image" content="assets/images/portfolio.PNG">
+    <meta property="og:url" content="https://RalphWiley.github.io/myPortfolio/">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/index.css" />
+</head>
+
+<body>
+
+    <div class="website">
+        <div class="row navbar-fixed">
+            <nav class="color-scheme">
+                <div class="nav-wrapper">
+                    <a class="brand-logo brandlogo center">NICHOLAS KEITH</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a class="nav1">About</a>
+                        </li>
+                        <li>
+                            <a class="nav2">Portfolio</a>
+                        </li>
+                        <li title="This will redirect to a new window">
+                            <a class="nav3" target="_blank" href="assets/documents/TechnicalResume.pdf">Resume</a>
+                        </li>
+                        <li>
+                            <a class="nav4">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a class="nav1 buttonCollapse">About</a>
+            </li>
+            <li>
+                <a class="nav2 buttonCollapse">Portfolio</a>
+            </li>
+            <li>
+                <a class="nav3 buttonCollapse" target="_blank" href="assets/documents/TechnicalResume.pdf">Resume</a>
+            </li>
+            <li>
+                <a class="nav4 buttonCollapse">Contact</a>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div id="landing" class="col s12 m12 l12 xl12 flow-text">
+                <h1 id="intro" class="center-align" style="color: white;">
+                    <span id="typing"></span>
+                    <span id="typeCursor"></span>
+                </h1>
+                <h2 id="subtitle" class="center-align" style="color: white;">Front End / Full-Stack Developer</h2>
+                <!-- scroller code taken from https://codepen.io/2xsamurai/pen/WwmjKQ -->
+            </div>
+        </div>
+        <div class="row">
+            <div id="about" class="col s12 m12 l12 xl12 center">
+                <img id="picture" class="col s10 m11 l3 xl3" src="assets/images/ME.jpg">
+                <h6 id="bio" class="valign-wrapper col s10 m10 l6 xl8">
+                    I have a passion for every art form and writing software is another means to that end. 
+                    I enjoy writing front-end code that uses either CSS Materialize or Bootstrap and soon to be SASS. 
+                    While I love the frontend I also have backend experience with Node JS and SQL. 
+                    Using Git on the command line is something that is increasingly becoming my favorite tool.
+                    <br>
+                    <br>
+                    I might have only lived in and around Overland Park but that hasn’t stopped me from 
+                    traveling around the world. I studied Film and Media at The University of Kansas where I took 20+ 
+                    credits a semester while working part-time and partaking in internships while always maintaining a GPA above 3.7.  
+                    I lost my passion for the film industry when I met my future self in L.A. whom was editing The Bachelor for 18 hours a day on minimum pay.  
+                    I believe in working hard but maintaining a healthy lifestyle is just as important.  I enjoy rock climbing, critiquing art and playing board games with friends and family.
+                    <br>
+                    <br>
+                </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div id="portfolio" class="col s12 m12 l12 xl12 flow-text">
+                <h1 class="center portHead">Swipe through projects!</h1>
+                    <div class="carousel-fixed-item center">
+                        <a id="carouselPrevious" class="btn waves-effect light-blue lighten-4"><i class="material-icons">arrow_back</i></i></a>
+                        <a id="carouselNext" class="btn waves-effect light-blue lighten-4"><i class="material-icons">arrow_forward</i></a>
+                    </div>
+                    <div class="portCarousel carousel carousel-slider s12 m12 l10 xl10 push-l1 push-xl1 center">
+                        <div class="col-s12 m12 l12 xl12">
+                        <div class="carousel-item green white-text" href="javascript:console.log('#one!')">
+                        
+                            <a target="_blank" href="https://maldrek.github.io/Firebase-Train-Demo/">
+                                <img class="portImage left" src="assets/images/Train Schedule.png">
+                            </a>
+                            <h3 class="center">Train Schedule</h3>
+                            <p style="center">
+                                Train Schedule utilizes Firebase, jQuery, and Bootstrap. The project accepts input from a user to create a list of trains and calculate the time the 
+                                train will be back and how many minutes away it is from the station.
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/Maldrek/Firebase-Train-Demo">View on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item light-blue accent-1 white-text" href="#two!">
+                        
+                            <a target="_blank" href="https://maldrek.github.io/Giphy-Producer/">
+                                <img class="portImage left" src="assets/images/GiphyApp.png">
+                            </a>
+                            <h3 class="center">Giphy Producer</h3>
+                            <p style="center">
+                                With the Giphy producer page, a user is able to use a created button which returns the top 10 gifs for that search term calling
+                                from the Giphy API.
+                            </p>
+                            <p>
+                                If the user instead has a different term to search for, users can enter their term in the input field and have a button dynamically
+                                created for them. They then can click that button to perform the API call to return the top
+                                10 gifs related to the search term that they input.
+                            </p>
+                            <p>
+                                Once the gifs are created and placed into the DOM, the user can then start or stop the gif simply by clicking on it.
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/Maldrek/Giphy-Producer">View on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item black lighten-4 white-text" href="#three!">
+                        
+                            <a target="_blank" href="https://ralphwiley.github.io/TriviaGame/">
+                                <img class="portImage left" src="assets/images/Trivia.png">
+                            </a>
+                            <h3 class="center">Film Trivia!</h3>
+                            <p style="center">
+                                A fun trivia game that utilizes Giphy API, jQuery, Bootstrap and Google Fonts.
+                            </p>
+                            <p>
+                                This game coincided with learning Bootstrap and jQuery. To start, click the start button.
+                                You will have 15 seconds for each of 10 questions. To answer, click on the answer.
+                                A fun gif that pertains to the question will play in between each answer.
+                                At the end you will be shown the amount of answers that you got right, wrong, and those that went unanswered.
+                                Learn Movie Trivia!
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/RalphWiley/TriviaGame">View on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item purple lighten-4 white-text" href="#four!">
+                        
+                            <a target="_blank" href="http://mini-jeopardy-app.herokuapp.com/">
+                                <img class="portImage left" src="assets/images/Jeopardy.png">
+                            </a>
+                            <h3 class="center">Mini-Jeopardy!</h3>
+                            <p style="center">
+                                A miniature version of the TV game show Jeopardy! that utilizes Firebase, Jservice API and GIPHY API. 
+                                Firebase will hold the leaderscores so everyone will know who is the best!
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/RalphWiley/Jeopardy">View on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item purple lighten-1 white-text" href="#five!">
+                        
+                            <a target="_blank" href="https://maldrek.github.io/Background-Gradient-Picker/">
+                                <img class="portImage left" src="assets/images/RuPaul.png">
+                            </a>
+                            <h3 class="center">RuPaul's Drag Race: Memory Game</h3>
+                            <p style="center">
+                                This project built with HTML, CSS, and Javascript takes the current colors of the color picker input and creates a left-to-right
+                                two-tone background gradient with the CSS code to generate the same effect for any developer
+                                who uses it.
+                            </p>
+                            <p style="center">
+                                The user can change the color-gradient of the background simply by clicking on a color input and changing the color chosen
+                                to another. Because the color gradient is left-to-right, the pickers are ordered as such
+                                (the left color picker represents the starting gradient color, and the right represents the
+                                ending gradient color).
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/Maldrek/Background-Gradient-Picker/">Click here to view on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item red lighten-2 white-text" href="#six!">
+                       
+                            <a target="_blank" href="https://maldrek.github.io/Bootstrap-Portfolio/">
+                                <img class="portImage left" src="assets/images/RuPaul.png">
+                            </a>
+                            <h3 class="center">Bootstrap Portfolio</h3>
+                            <p style="center">
+                                In the beginning of my educational journey, we designed a portfolio using strictly HTML and CSS with the Bootstrap CDN.
+                            </p>
+                            <p>
+                                I am including this project to show the growth from my beginning portfolio build to my current portfolio. This project, while
+                                useful at the time and laid out some foundational building blocks, hopefully will help show
+                                you the difference not only in my code as I have become a better developer, but also the
+                                difference in design and functionality.
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/Maldrek/Bootstrap-Portfolio">Click here to view on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-s12 m12 l12 xl12">
+                    <div class="carousel-item orange lighten-2 white-text" href="#seven!">
+                        
+                            <a target="_blank" href="https://github.com/Maldrek/Liri-Node-App">
+                                <img class="portImage left" src="assets/images/RuPaul.png">
+                            </a>
+                            <h3 class="center">Liri Node Application</h3>
+                            <p style="center">
+                                This node application is the minimal representation of Apple's Siri.
+                            </p>
+                            <p>
+                                The user is able to connect to a Twitter database and show the most recent tweets they have created. They can also search
+                                for a song and return the album name and year release date or search for a movie and have
+                                it return the movie's information such as Title, plot, ImDB and Rotten Tomatoes ratings,
+                                languages and main actors.
+                            </p>
+                            <p>
+                                <a target="_blank" href="https://github.com/Maldrek/Liri-Node-App">Click here to view on Github!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div id="contact" class="col s12 m12 l12 xl12 flow-text">
+                <h1 id="contactHeader" class="center-align">Contact @</h1>
+                <div class="row col xs2 s10 m9 l12 xl12">
+                    
+                        <ul class="valign-wrapper centered">
+                            <Row>
+                                <Col>
+                                    <li>
+                                        <a class="socLink" target="_blank" href="https://www.linkedin.com/in/nick-keith/">
+                                            <img class="linkedIn" src="assets/images/linkedin.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socLink" target="_blank" href="https://github.com/RalphWiley">
+                                            <img class="github" src="assets/images/github.png">
+                                        </a>
+                                    </li>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <li>
+                                        <a class="socLink" target="_blank" href="https://www.stackoverflow.com/">
+                                            <img class="stack" src="assets/images/stack.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="socLink" target="_blank" href="mailto:nazkeith@gmail.com">
+                                            <img class="gmail" src="assets/images/gmail.png">
+                                        </a>
+                                    </li>
+                                </Col>
+                            </Row>
+                        </ul>
+                   
+                </div>
+    
+            </div>
+        </div>
+        <div class="row">
+            <footer class="col s12 m12 l12 xl12">
+                <p class="center-align" style="margin-top:3vh;">
+                    <u>NICHOLAS KEITH</u> &copy;
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script> ALL RIGHTS RESERVED.
+                </p>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/index.js"></script>
+</body>
+
+</html>

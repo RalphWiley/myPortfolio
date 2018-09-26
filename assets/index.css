@@ -1,0 +1,242 @@
+body {
+    background-image: url("../assets/images/background.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Amiri;
+}
+
+.color-scheme {
+    background: linear-gradient(90deg, #3f23da, #412e86, rgb(109, 94, 179), #8692e3);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+
+.website {
+    flex: 1 0 auto;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.brandlogo {
+    cursor: pointer;
+    border: 1px double white;
+    width: 300px;
+}
+
+.github, .stack, .linkedIn, .gmail {
+    height: 10rem;
+    width: 10rem;
+    margin: 10px;
+}
+
+.github:hover, .stack:hover, .linkedIn:hover, .gmail:hover {
+    box-shadow: 2px 2px 15px blue;
+}
+
+.centered {
+   margin: 0 auto;
+   width: 300px;
+   margin-top: 4rem;
+}
+
+#typing {
+    font-size: 8rem!important;
+}
+
+#heading {
+    height: 100vh;
+}
+
+#intro {
+    margin-top: 30vh;
+    position: relative;
+    text-shadow:rgb(63, 4, 63) 2px 2px 7px;
+}
+
+#subtitle {
+    margin-top: 5vh;
+    text-shadow: rgb(63, 4, 63) 2px 2px 7px;
+    position: static;
+    font-size: 3rem!important;
+}
+
+#landing{ 
+    height: 100vh;
+    padding: 0px;
+}
+
+/* scroller code taken from https://codepen.io/2xsamurai/pen/WwmjKQ */
+#scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 98vh;
+    cursor: pointer;
+    width :34px;
+    height: 55px;
+  }
+
+  .mouseRoll {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid rgb(16, 19, 68);
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: rgb(16, 19, 68);
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+.magic {
+    top: 90vh;
+    color: white;
+    text-shadow: black 1px 1px 25px;
+}
+
+#about {
+    height: 100vh;
+    background-color: rgba(165, 230, 247, 0.9);
+    display: block;
+    overflow-x: auto;
+    border: 2px 2px black;
+}
+
+#bio {
+    margin-top: 20vh;
+    margin-left: 4rem;
+    color: rgb(16, 19, 68);
+    line-height: inherit;
+    font-size: 20px;
+}
+
+#picture {
+    box-shadow: 2px 2px 15px rgb(16, 19, 68);
+    border: solid 5px rgb(63, 4, 63);
+    margin-top: 7rem;
+    margin-bottom: 10vh;
+    margin-left: 2rem;
+    padding: 0px;
+}
+
+#portfolio {
+    height: 100vh;
+    margin-top: 5rem;
+    background-color: rgba(165, 230, 247, 0.9);
+    display: block;
+}
+
+.carousel-item {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item p{
+    padding-left: 55px;
+    padding-right: 55px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+}
+
+#carouselPrevious:hover, #carouselNext:hover{
+    color: blue !important;
+}
+
+.portCarousel {
+    margin-top: 75px;
+}
+
+.portImage {
+    height: 100%;
+    width: 40%;
+    border-right: 2px double black;
+}
+
+.portImage:hover {
+    opacity: 0.3;
+}
+
+#resume {
+    height: 100vh;
+    margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: block;
+}
+
+#contact {
+    height: 100vh;
+    margin-top: 3rem;
+    background-color: rgba(165, 230, 247, 0.9);
+    display: block;
+    overflow: auto;
+    color: rgb(16, 19, 68);
+}
+
+#contactHeader {
+    border-bottom: 1mm solid rgb(63, 4, 63);
+    width: 600px;
+    margin: auto;
+    margin-top: 8rem;
+    
+}
+
+footer {
+    height: 4rem;
+    background-color:rgba(165, 230, 247, 0.9);
+    color: rgb(148, 148, 175);
+    margin-top: 5rem;
+    margin-bottom: -3rem;
+    position: sticky;
+}
+
+#sidenav-overlay {
+    z-index: 996;
+}
